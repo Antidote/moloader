@@ -170,10 +170,9 @@ const char* gettext(const char* str) {
 
   while (true) {
     uint32_t strno = mHashTable[idx];
-    if (strno == hash) {
+    if (strno == 0) {
       return nullptr;
     }
-    strno--;
 
     if ((strno & (1 << 31)) == 0) {
       // not a system dependent string
