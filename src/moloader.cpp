@@ -171,7 +171,7 @@ const char* gettext(const char* str) {
   while (true) {
     uint32_t strno = mHashTable[idx];
     if (strno == 0) {
-      return nullptr;
+      return str;
     }
     strno--;
     
