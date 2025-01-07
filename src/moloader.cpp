@@ -173,7 +173,8 @@ const char* gettext(const char* str) {
     if (strno == 0) {
       return nullptr;
     }
-
+    strno--;
+    
     if ((strno & (1 << 31)) == 0) {
       // not a system dependent string
       if (len <= mOriginalTable[strno].size() && !strcmp(mOriginalTable[strno].data(), str)) {
