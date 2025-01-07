@@ -10,6 +10,8 @@ add_library(moloader STATIC
         src/moloader.cpp
 )
 
+add_library(moloader::moloader ALIAS moloader)
+
 target_include_directories(moloader PUBLIC
         include
 )
