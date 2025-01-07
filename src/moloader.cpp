@@ -1,10 +1,11 @@
 #include "moloader/moloader.hpp"
 
 #include <bit>
-#include <bits/ranges_algo.h>
 #include <cstdint>
 #include <cstring>
 #include <fstream>
+#include <ranges>
+#include <algorithm>
 namespace moloader {
 static std::vector<uint32_t> mHashTable;
 static std::vector<std::string> mOriginalTable;
