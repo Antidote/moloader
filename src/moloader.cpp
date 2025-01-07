@@ -160,7 +160,7 @@ static uint32_t calculateNextIndex(uint32_t curidx, uint32_t hsize, uint32_t ste
 
 const char* gettext(const char* str) {
   if (mHashTable.size() <= 2) {
-    return nullptr;
+    return str;
   }
     
   const uint32_t hash = hashString(str);
